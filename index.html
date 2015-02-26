@@ -4,13 +4,54 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<title>Indika Wijesooriya</title>
 		<link href="css/styles.css" rel="stylesheet" type="text/css">
+        
+        <script src="js/TweenMax.min.js"></script>
+        <script src="js/utils/Draggable.min.js"></script>
+        <script src="js/plugins/ThrowPropsPlugin.min.js"></script>
+        <script src="js/easing/EasePack.min.js"></script>
+        
+        <script>
+            
+            
+        function init()
+            {
+               
+            }
+            
+            function btnClick(btnTarget)
+            {
+                //var btn = document.getElementById(btnTarget);
+                //TweenMax.btn
+            }
+            
+            function btnUp(btnTarget)
+            {
+                var btn = document.getElementById(btnTarget);
+                TweenMax.to(btn, 1, {scale:1.2, ease:Elastic.easeOut});
+                //alert("lol " + btnTarget);
+            }
+            
+            function btnLeft(btnTarget)
+            {
+                var btn = document.getElementById(btnTarget);
+                TweenMax.to(btn, 1, {scale:1, ease:Elastic.easeOut});
+                //alert("unlol" + btnTarget);
+            }
+        </script>
 	</head>
-	<body>
+	<body onload="init()">
 		<div id="background">
 			<div id="Background"><img src="images/Background.png"></div>
 			<div id="Rectangle2"><img src="images/Rectangle2.png"></div>
-			<div id="BLOG"><img src="images/BLOG.png"></div>
-			<div id="WORK"><img src="images/WORK.png"></div>
+            
+			<div id="BLOG">
+                <a href="http://thewindgap.blogspot.com/">
+                <input type="image" img src="images/BLOG.png" id="btn_blog" onmousemove="btnUp('btn_blog');" onmouseout="btnLeft('btn_blog');">
+                </a>
+            </div>
+            
+			<div id="WORK"><input type="image" img src="images/WORK.png" id="btn_work" onmousemove="btnUp('btn_work');" onmouseout="btnLeft('btn_work');"></div>
+            
 			<div id="INDIKMANGITHUBIO"><img src="images/INDIKMANGITHUBIO.png"></div>
 			<div id="Rectangle1"><img src="images/Rectangle1.png"></div>
 		</div>
