@@ -1,0 +1,77 @@
+ body {
+	margin: 0;
+	padding: 0;
+ }
+ 
+ #background 
+{ 
+	 left: 0px; 
+	 top: 0px; 
+	 position: relative; 
+	 margin-left: auto; 
+	 margin-right: auto; 
+	 width: 1024px;
+	 height: 768px; 
+	 overflow: hidden;
+	 z-index:0;
+	} 
+
+ #Background 
+{ 
+	 left: 0px; 
+	 top: 0px; 
+	 position: absolute; 
+	 width: 1024px;
+	 height: 768px;
+	 z-index:1;
+} 
+
+ #Rectangle2 
+{ 
+	 left: 179px; 
+	 top: 162px; 
+	 position: absolute; 
+	 width: 638px;
+	 height: 384px;
+	 z-index:2;
+} 
+
+ #BLOG 
+{ 
+	 left: 121px; 
+	 top: 588px; 
+	 position: absolute; 
+	 width: 309px;
+	 height: 91px;
+	 z-index:3;
+} 
+
+ #WORK 
+{ 
+	 left: 553px; 
+	 top: 588px; 
+	 position: absolute; 
+	 width: 309px;
+	 height: 91px;
+	 z-index:4;
+} 
+
+ #INDIKMANGITHUBIO 
+{ 
+	 left: 230px; 
+	 top: 79px; 
+	 position: absolute; 
+	 width: 533px;
+	 height: 35px;
+	 z-index:5;
+} 
+
+ #Rectangle1 
+{ 
+	 left: 223px; 
+	 top: 116px; 
+	 position: absolute; 
+	 width: 543px;
+	 height: 11px;
+	 z-index:6;
+} 
