@@ -13,7 +13,6 @@
         <script src="js/utils/Draggable.min.js"></script>
         <script src="js/plugins/ThrowPropsPlugin.min.js"></script>
         <script src="js/easing/EasePack.min.js"></script>
-        
         <script>
         
         function init()
@@ -24,13 +23,8 @@
                 var lols2 = document.getElementById("icon3");
                 var lols3 = document.getElementById("icon4");
                 var logo = document.getElementById("mainLogo");
-                //var lols4 = document.getElementById("icon2");
                 Draggable.create(popi, {type: "x,y", edgeResistance:0.5, throwProps: true, bounds:window});
-                TweenMax.to(r, 1 , {y:"+30", ease:Sine.easeInOut, yoyo:true, repeat:-1, delay:0.25});
-                TweenMax.to(lols, 1 , {y:"+30", ease:Sine.easeInOut, yoyo:true, repeat:-1, delay:0.50});
-                TweenMax.to(lols2, 1 , {y:"+30", ease:Sine.easeInOut, yoyo:true, repeat:-1, delay:0.75});
-                TweenMax.to(lols3, 1 , {y:"+30", ease:Sine.easeInOut, yoyo:true, repeat:-1, delay:1});
-                TweenMax.to(logo, 1 , {scaleY:0.9, scaleX:0.9, ease:Sine.easeInOut, yoyo:true, repeat:-1, delay:4});
+                TweenMax.to(logo, 1 , {scaleY:0.9, scaleX:0.9, ease:Sine.easeInOut, yoyo:true, repeat:2, delay:4});
             }
             
         </script>
@@ -45,34 +39,46 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 	</head>
 	<body class="loading" onload="init()">
+        
 		<div id="wrapper">
+            
 			<div id="bg"></div>
 			<div id="overlay"></div>
+            <div id="pops" class="popup">
+                
+                <img src="images/logo.png" style="width:50%; height:30%; align-content: center; ">
+                
+                </div>
+            
+            
+                        
+                        
 			<div id="main">
 
 				<!-- Header -->
 					<header id="header">
-                        <div id="pops" class="popup">
                         
-                        </div>
                         <div id="iconzz">
                             <img src="images/logo.png" id="mainLogo" style="width:50%; height:30%; align-content: center; ">
                         </div>
+						<div id="countdown" align="center" style="font-size:50px; font-family:Montserrat; 
+                    font-style: bold; opacity:0.8"></div>
 						
-						<p>indika </p>
 						<nav>
+                            <br>
 							<ul>
-                                <li><img src="images/1.png" id="icon1" style="width:70%; height:70%;"></li>
-                                <li><img src="images/2.png" id="icon2" style="width:70%; height:70%;"></li>
-                                <li><img src="images/3.png" id="icon3" style="width:70%; height:70%;"></li>
-                                <li><img src="images/4.png" id="icon4" style="width:70%; height:70%;"></li>
+                                <li><input type="image" src="images/1.png" id="icon1" style="width:70%; height:70%;"></li>
+                                <li><input type="image" src="images/2.png" id="icon2" style="width:70%; height:70%;"></li>
+                                <li><input type="image" src="images/3.png" id="icon3" style="width:70%; height:70%;"></li>
+                                <li><input type="image" src="images/4.png" id="icon4" style="width:70%; height:70%;"></li>
 							</ul> 
+                            
 						</nav>
 					</header>
 
 				<!-- Footer -->
 					<footer id="footer">
-						
+                       AIESEC COLOMBO SOUTH - University of Moratuwa 
 					</footer>
 				
 			</div>
@@ -82,11 +88,72 @@
         
           $('#icon1').click(function()
                               {
-              alert("dafaq");
                                     $('#pops').css('display', 'block');
-                                
+                                    TweenMax.from($('#pops'), 2 , {rotation:360, scaleX:0, scaleY:0, ease:Elastic.easeOut});
                                 });
           
+          
+          
+          //button popup
+         
+          $('#icon1').mouseover(function(){TweenMax.to($('#icon1'), 1 , {scaleX:1.35, scaleY:1.35, ease:Strong.easeOut});});
+          $('#icon2').mouseover(function(){TweenMax.to($('#icon2'), 1 , {scaleX:1.35, scaleY:1.35, ease:Strong.easeOut});});
+          $('#icon3').mouseover(function(){TweenMax.to($('#icon3'), 1 , {scaleX:1.35, scaleY:1.35, ease:Strong.easeOut});});
+          $('#icon4').mouseover(function(){TweenMax.to($('#icon4'), 1 , {scaleX:1.35, scaleY:1.35, ease:Strong.easeOut});});
+          
+          $('#icon1').mouseout(function(){TweenMax.to($('#icon1'), 1 , {scaleX:1, scaleY:1, ease:Strong.easeOut});});
+          $('#icon2').mouseout(function(){TweenMax.to($('#icon2'), 1 , {scaleX:1, scaleY:1, ease:Strong.easeOut});});
+          $('#icon3').mouseout(function(){TweenMax.to($('#icon3'), 1 , {scaleX:1, scaleY:1, ease:Strong.easeOut});});
+          $('#icon4').mouseout(function(){TweenMax.to($('#icon4'), 1 , {scaleX:1, scaleY:1, ease:Strong.easeOut});});
+         
+          
         </script>
+        
+        <script>
+
+    CountDownTimer('03/27/2015 08:00 PM', 'countdown');
+
+    function CountDownTimer(dt, id)
+    {
+        var end = new Date(dt);
+
+        var _second = 1000;
+        var _minute = _second * 60;
+        var _hour = _minute * 60;
+        var _day = _hour * 24;
+        var timer;
+
+        function showRemaining() {
+            var now = new Date();
+            var distance = end - now;
+            if (distance < 0) {
+
+                clearInterval(timer);
+                document.getElementById(id).innerHTML = 'EXPIRED!';
+
+                return;
+            }
+            var days = Math.floor(distance / _day);
+            var hours = Math.floor((distance % _day) / _hour);
+            var minutes = Math.floor((distance % _hour) / _minute);
+            var seconds = Math.floor((distance % _minute) / _second);
+
+            document.getElementById(id).innerHTML = days + ' DAYS ';
+            if(hours<10)
+                document.getElementById(id).innerHTML += '0'+hours + ' HOURS ';
+            else
+                document.getElementById(id).innerHTML += hours + ' HOURS ';
+            
+            if(minutes<10)
+                document.getElementById(id).innerHTML += '0' + minutes + ' MINS ';
+            else
+                document.getElementById(id).innerHTML += minutes + ' MINS ';
+                
+        }
+
+        timer = setInterval(showRemaining, 1000);
+    }
+</script>
+        
 	</body>
 </html>
