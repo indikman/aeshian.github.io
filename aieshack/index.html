@@ -19,17 +19,18 @@
         function init()
             {
                 var r = document.getElementById("icon1");
+                var popi = document.getElementById("pops");
                 var lols = document.getElementById("icon2");
                 var lols2 = document.getElementById("icon3");
                 var lols3 = document.getElementById("icon4");
                 var logo = document.getElementById("mainLogo");
                 //var lols4 = document.getElementById("icon2");
-                Draggable.create(r, {type: "x,y", edgeResistance:0.5, throwProps: true, bounds:window});
+                Draggable.create(popi, {type: "x,y", edgeResistance:0.5, throwProps: true, bounds:window});
                 TweenMax.to(r, 1 , {y:"+30", ease:Sine.easeInOut, yoyo:true, repeat:-1, delay:0.25});
                 TweenMax.to(lols, 1 , {y:"+30", ease:Sine.easeInOut, yoyo:true, repeat:-1, delay:0.50});
                 TweenMax.to(lols2, 1 , {y:"+30", ease:Sine.easeInOut, yoyo:true, repeat:-1, delay:0.75});
                 TweenMax.to(lols3, 1 , {y:"+30", ease:Sine.easeInOut, yoyo:true, repeat:-1, delay:1});
-                TweenMax.to(logo, 1 , {scaleY:0.9, scaleX:0.9, ease:Sine.easeInOut, yoyo:true, repeat:1, delay:4});
+                TweenMax.to(logo, 1 , {scaleY:0.9, scaleX:0.9, ease:Sine.easeInOut, yoyo:true, repeat:-1, delay:4});
             }
             
         </script>
@@ -51,11 +52,14 @@
 
 				<!-- Header -->
 					<header id="header">
+                        <div id="pops" class="popup">
+                        
+                        </div>
                         <div id="iconzz">
                             <img src="images/logo.png" id="mainLogo" style="width:50%; height:30%; align-content: center; ">
                         </div>
 						
-						<p>Indika Asitha | Indika Asitha | Indika Asitha | Indika Asitha | Indika Asitha | Indika Asitha | Indika Asitha | Indika Asitha | Indika Asitha | Indika Asitha </p>
+						<p>indika </p>
 						<nav>
 							<ul>
                                 <li><img src="images/1.png" id="icon1" style="width:70%; height:70%;"></li>
@@ -73,6 +77,16 @@
 				
 			</div>
 		</div>
-      
+      <script src="js/jquery.min.js"></script>
+      <script>
+        
+          $('#icon1').click(function()
+                              {
+              alert("dafaq");
+                                    $('#pops').css('display', 'block');
+                                
+                                });
+          
+        </script>
 	</body>
 </html>
