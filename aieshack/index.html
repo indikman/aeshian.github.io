@@ -26,8 +26,15 @@
 			<div id="overlay"></div>
             
             
+            <!--close button-->
+            <div id="closebtn" class="closebutton">
+                <input type="image" src="images/close.png" id="btnclose" style="width:100%; height:100%;">
+            </div>
+            
             <div id="pops" class="popup">
-                <img src="images/logo.png" style="width:50%; height:30%; align-content: center; ">
+                <iframe src="https://docs.google.com/forms/d/1mA0VoncYDMmcV7MoTHpSZwVXTN1J9xQ9e3kOoQlWPsI/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0" id="signupform">Loading...</iframe>
+                
+                
             </div>
             
            
@@ -59,12 +66,17 @@
 						
 						<nav>
 							<ul>
-                                <li><input type="image" src="images/1.png" id="icon1" style="width:70%; height:70%;"></li>
-                                <li><input type="image" src="images/2.png" id="icon2" style="width:70%; height:70%;"></li>
-                                <li><input type="image" src="images/3.png" id="icon3" style="width:70%; height:70%;"></li>
-                                <li><input type="image" src="images/4.png" id="icon4" style="width:70%; height:70%;"></li>
+                                <li><input type="image" src="images/1.png" id="icon1" style="width:90%; height:90%;"></li>
+                                <li><input type="image" src="images/2.png" id="icon2" style="width:90%; height:90%;"></li>
+                                <li><input type="image" src="images/3.png" id="icon3" style="width:90%; height:90%;"></li>
+                                <li><input type="image" src="images/4.png" id="icon4" style="width:90%; height:90%;"></li>
 							</ul> 
                             
+							<ul>
+                                <li><img src="images/logo1.png" style="width:100%; height:100%;"></li>
+                                <li><img src="images/logo2.png" style="width:90%; height:100%;"></li>
+                                <li><img src="images/logo3.png" style="width:100%; height:100%;"></li>
+							</ul> 
 						</nav>
 					</header>
 
@@ -78,12 +90,22 @@
       <script src="js/jquery.min.js"></script>
       <script>
         
+          //click icon 1
           $('#icon1').click(function()
                               {
                                     $('#pops').css('display', 'block');
-                                    TweenMax.from($('#pops'), 2 , {rotation:360, scaleX:0, scaleY:0, ease:Elastic.easeOut});
+                                    $('#closebtn').css('display', 'block');
+                                    TweenMax.from($('#pops'), 1 , { scaleX:0, scaleY:0, ease:Elastic.easeOut});
+                                    TweenMax.from($('#btnclose'), 1 , {scaleX:0, scaleY:0, ease:Elastic.easeOut});
                                 });
           
+          
+          //Click the close button
+           $('#btnclose').click(function()
+                              {
+                                    $('#pops').css('display', 'none');
+                                    $('#closebtn').css('display', 'none');
+                                });
           
           
           //button popup
@@ -92,18 +114,20 @@
           $('#icon2').mouseover(function(){TweenMax.to($('#icon2'), 1 , {scaleX:1.35, scaleY:1.35, ease:Strong.easeOut});});
           $('#icon3').mouseover(function(){TweenMax.to($('#icon3'), 1 , {scaleX:1.35, scaleY:1.35, ease:Strong.easeOut});});
           $('#icon4').mouseover(function(){TweenMax.to($('#icon4'), 1 , {scaleX:1.35, scaleY:1.35, ease:Strong.easeOut});});
+          $('#btnclose').mouseover(function(){TweenMax.to($('#btnclose'), 1 , {scaleX:1.35, scaleY:1.35, ease:Strong.easeOut});});
           
           $('#icon1').mouseout(function(){TweenMax.to($('#icon1'), 1 , {scaleX:1, scaleY:1, ease:Strong.easeOut});});
           $('#icon2').mouseout(function(){TweenMax.to($('#icon2'), 1 , {scaleX:1, scaleY:1, ease:Strong.easeOut});});
           $('#icon3').mouseout(function(){TweenMax.to($('#icon3'), 1 , {scaleX:1, scaleY:1, ease:Strong.easeOut});});
           $('#icon4').mouseout(function(){TweenMax.to($('#icon4'), 1 , {scaleX:1, scaleY:1, ease:Strong.easeOut});});
+          $('#btnclose').mouseout(function(){TweenMax.to($('#btnclose'), 1 , {scaleX:1, scaleY:1, ease:Strong.easeOut});});
          
           
         </script>
         
         
    
-        </script>
+        
         <script src="js/skel.min.js"></script>
 		<script src="js/init.js"></script>
         <script src="js/TweenMax.min.js"></script>

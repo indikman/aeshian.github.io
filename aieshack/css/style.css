@@ -249,12 +249,15 @@
 				-ms-transform: translate3d(0,0,0);
 				transform: translate3d(0,0,0);
 				display: inline-block;
-				height: 5.35em;
-				line-height: 5.885em;
+				//height: 5.35em;
+                margin:0px;
+                margin-bottom: 0;
+                margin-top: 0;
+				//line-height: 5.885em;
 				opacity: 0;
 				position: relative;
 				top: 0;
-				width: 5.35em;
+				width: 11em;
 			}
 
 				#header nav li:nth-child(1) {
@@ -408,16 +411,34 @@
 /* popup */
    .popup {
     display: none;
-    position: absolute;
-    height: 90vh;
-    width: 90vw;
+    position:relative;
+    height: 520px;
+    width: 760px;
     background-color: black;
-   
-    /*margin:auto;*/
-    top: 5vh ;
-    left:5vw;
+    border: 10px solid #333333;
+    margin:auto;
+    top: 10vh ;
+    /*left:5vw;*/
 
    /* bottom:auto;*/
     z-index: 999;
    /* overflow-y: scroll;*/
 }
+
+    #signupform {
+    position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    .closebutton {
+        display:none;
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        width: 50px;
+        height: 50px;
+        background-color: transparent;
+        z-index: 1500;
+    }
