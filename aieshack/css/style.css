@@ -1,8 +1,4 @@
-/*
-	Aerial by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+
 @import url(http://fonts.googleapis.com/css?family=Montserrat:700,400);
 
 /* Basic */
@@ -82,7 +78,7 @@
 		opacity: 0;
 		position: fixed;
 		top: 0;
-		width: 100%;
+		width: 100vw;
 	}
 
     #icons {
@@ -111,13 +107,14 @@
 		transform: translate3d(0,0,0);
 		/* Set your background with this */
 		background: #000000 url("images/bg.jpg") center left;
-		background-repeat: repeat-x;
-        background-size: cover;
-		height: 100%;
-		left: 0;
+     
+		background-repeat:repeat-x;
+        background-size:1500px auto;
+        width: 4500px;
+		height: 100vh;
 		opacity: 1;
-		position: fixed;
 		top: 0;
+        min-width: 100vw;
 	}
 	@-moz-keyframes bg { 0% { -moz-transform: translate3d(0,0,0); -webkit-transform: translate3d(0,0,0); -o-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0); } 100% { -moz-transform: translate3d(-2250px,0,0); -webkit-transform: translate3d(-2250px,0,0); -o-transform: translate3d(-2250px,0,0); -ms-transform: translate3d(-2250px,0,0); transform: translate3d(-2250px,0,0); } }
 	@-webkit-keyframes bg { 0% { -moz-transform: translate3d(0,0,0); -webkit-transform: translate3d(0,0,0); -o-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0); } 100% { -moz-transform: translate3d(-2250px,0,0); -webkit-transform: translate3d(-2250px,0,0); -o-transform: translate3d(-2250px,0,0); -ms-transform: translate3d(-2250px,0,0); transform: translate3d(-2250px,0,0); } }
@@ -125,10 +122,10 @@
 	@-ms-keyframes bg { 0% { -moz-transform: translate3d(0,0,0); -webkit-transform: translate3d(0,0,0); -o-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0); } 100% { -moz-transform: translate3d(-2250px,0,0); -webkit-transform: translate3d(-2250px,0,0); -o-transform: translate3d(-2250px,0,0); -ms-transform: translate3d(-2250px,0,0); transform: translate3d(-2250px,0,0); } }
 	@keyframes bg { 0% { -moz-transform: translate3d(0,0,0); -webkit-transform: translate3d(0,0,0); -o-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0); } 100% { -moz-transform: translate3d(-2250px,0,0); -webkit-transform: translate3d(-2250px,0,0); -o-transform: translate3d(-2250px,0,0); -ms-transform: translate3d(-2250px,0,0); transform: translate3d(-2250px,0,0); } }
 
-	#bg {
+	/*#bg {
 		background-size: 2250px auto;
 		width: 6750px;
-	}
+	}*/
 
 /* Overlay */
 	@-moz-keyframes overlay { 0% { opacity: 0; } 100% { opacity: 1; } }
@@ -410,20 +407,52 @@
 
 /* popup */
    .popup {
+       
+        display:none;
+        position: absolute;
+        width: 760px;
+        height: 520px;
+        background-color: transparent;
+        z-index: 1500;
+        background-color: black;
+        border: 10px solid #333333;
+        margin:0 auto;
+        top: 10% ;
+        left:0;
+        right:0;
+        z-index: 999;
+}
+
+/* popup */
+   .popwindow {
+       
+        display:none;
+        position: absolute;
+        width: 760px;
+        height: 520px;
+        background-color: transparent;
+        z-index: 1500;
+        background-color: black;
+        border: 10px solid #333333;
+        margin:0 auto;
+        top: 10% ;
+        left:0;
+        right:0;
+        z-index: 999;
+}
+
+   .overlaypageclass {
     display: none;
     position:relative;
-    height: 520px;
-    width: 760px;
+    height: 100%;
+    width: 100%;
     background-color: black;
     border: 10px solid #333333;
-    margin:auto;
-    top: 10vh ;
-    /*left:5vw;*/
-
-   /* bottom:auto;*/
-    z-index: 999;
-   /* overflow-y: scroll;*/
+    top: -100vh ;
+    opacity: 0.5;
+    z-index: 30;
 }
+
 
     #signupform {
     position: absolute;
