@@ -411,7 +411,7 @@
        
         display:none;
         position: absolute;
-        width: 760px;
+        width:  90%;
         height: 520px;
         background-color: transparent;
         z-index: 1500;
@@ -429,7 +429,7 @@
         overflow-y:scroll;
         display:none;
         position: absolute;
-        width: 760px;
+        width: 80%;
         height: 520px;
         background-color: transparent;
         z-index: 1500;
