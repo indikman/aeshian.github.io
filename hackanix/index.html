@@ -18,8 +18,8 @@
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 	</head>
-	<body class="loading" onload="init()">
-        
+	<body class="loading">
+        <div class="loader"></div>
 		<div id="wrapper">
             
 			<div id="bg"></div>
@@ -103,8 +103,8 @@
       <script src="js/jquery.min.js"></script>
       <script>
           $(window).load(function() {
-            $("body").fadeIn(100);            
-          });
+            $(".loader").fadeOut("slow");
+          })
           //click icon 1
           $('#icon1').click(function()
                               {
@@ -194,17 +194,16 @@
         <script src="js/jquery.countdown.js"></script>
         <script>
         
-        function init()
-            {
-                var r = document.getElementById("icon1");
-                var pop = document.getElementById("pops");
-                var lols = document.getElementById("icon2");
-                var lols2 = document.getElementById("icon3");
-                var lols3 = document.getElementById("icon4");
-                var logo = document.getElementById("mainLogo");
-                Draggable.create($('#pops'), {type: "x,y", edgeResistance:0.5, throwProps: true, bounds:window});
-                TweenMax.to(logo, 1 , {scaleY:0.9, scaleX:0.9, ease:Sine.easeInOut, yoyo:true, repeat:2, delay:4});
-            }
+        
+        var r = document.getElementById("icon1");
+        var pop = document.getElementById("pops");
+        var lols = document.getElementById("icon2");
+        var lols2 = document.getElementById("icon3");
+        var lols3 = document.getElementById("icon4");
+        var logo = document.getElementById("mainLogo");
+        Draggable.create($('#pops'), {type: "x,y", edgeResistance:0.5, throwProps: true, bounds:window});
+        TweenMax.to(logo, 1 , {scaleY:0.9, scaleX:0.9, ease:Sine.easeInOut, yoyo:true, repeat:2, delay:4});
+
             
             $(function(){
                 $(".digits").countdown({
