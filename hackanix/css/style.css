@@ -411,8 +411,8 @@
        
         display:none;
         position: absolute;
-        width:  90%;
-        height: 520px;
+        width:  70%;
+        height: 80%;
         background-color: transparent;
         z-index: 1500;
         background-color: black;
@@ -430,7 +430,7 @@
         position: absolute;
         //overflow-y: scroll;
         width: 80%;
-        height: 520px;
+        height: 80%;
         z-index: 1500;
         background-color: black;
         border: 10px solid #333333;
