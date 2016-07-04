@@ -3987,7 +3987,7 @@ input[type="submit"].btn.btn-mini {
 }
 
 .navbar .nav {
-  top:90px;
+  //top:90px;
   position: relative;
   left: 0;
   display: block;

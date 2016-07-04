@@ -342,6 +342,28 @@ $("#send-mail").click(function () {
             jQuery('#third-person').removeClass("animated pulse");
         }
     });
+
+
+
+    //animate forth team member
+    jQuery('#forth-person').bind('inview', function (event, visible) {
+        if (visible == true) {
+            jQuery('#forth-person').addClass("animated pulse");
+        } else {
+            jQuery('#forth-person').removeClass("animated pulse");
+        }
+    });
+
+
+
+    //animate fifth team member
+    jQuery('#fifth-person').bind('inview', function (event, visible) {
+        if (visible == true) {
+            jQuery('#fifth-person').addClass("animated pulse");
+        } else {
+            jQuery('#fifth-person').removeClass("animated pulse");
+        }
+    });
     
     //Animate price columns
     jQuery('.price-column, .testimonial').bind('inview', function (event, visible) {
@@ -372,40 +394,3 @@ $("#send-mail").click(function () {
         }
     });
 });
-
-//Initialize google map for contact setion with your location.
-
-function initializeMap() {
-
-    var lat = '6.920677'; //Set your latitude.
-    var lon = '79.856236'; //Set your longitude.
-
-    var centerLon = lon - 0.003;
-
-    var myOptions = {
-        scrollwheel: false,
-        draggable: true,
-        disableDefaultUI: true,
-        center: new google.maps.LatLng(lat, centerLon),
-        zoom: 18,
-        mapTypeId: google.maps.MapTypeId.ROADMAP
-    };
-
-    //Bind map to elemet with id map-canvas
-    var map = new google.maps.Map(document.getElementById('map-canvas'), myOptions);
-    var marker = new google.maps.Marker({
-        map: map,
-        position: new google.maps.LatLng(lat, lon),
-
-    });
-
-    var infowindow = new google.maps.InfoWindow({
-        content: "Exolvere venue : JAIC HILTON"
-    });
-
-    google.maps.event.addListener(marker, 'click', function () {
-        infowindow.open(map, marker);
-    });
-
-    infowindow.open(map, marker);
-}
