@@ -1,0 +1,14 @@
+decision tree as pre process
+yes, can be used to select the attributes which in information gain is maximized.(using entropy). Attribute subset selection can be used as a data reduction technique.
+
+Partitioning with apriori
+locations consider as non overlaping partitions any frequent itemset with respect to must be a frequent itemset in at least on e of the partitions. Results can be them consolidated to form global itemsets. 
+
+medical
+split the dataset in to two sets. Name them training set and test set. In this case we make an assumption that data is independdently & identically distributed.
+The reason is if we used the same set for validation it would be over optimisic because data would be overrted. A widely used split point for the data sets is 70% 30%
+Using the test the accuracy can be calculated.
+
+
+Using the median is mor robust than the mean in the presence of noise and outliers, because a mediod is less inluenced by outliers
+However its processing is most costly than using the mean
