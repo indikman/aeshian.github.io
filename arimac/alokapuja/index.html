@@ -2,6 +2,8 @@
 
 <Head>
 <TITLE>Lightup Sri Lanka</TITLE>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="lamp.css">
     <link rel="stylesheet" type="text/css" href="lamp.css">
     
 </Head>
@@ -16,17 +18,31 @@
             <div class="bottom"></div>
           </div>
           <div class="wick"></div>
-        <!--  <div class="wax"></div>-->
         </div>
     </div>
 </div>
     
-<div class="lamp-unlit">
+<div class="lamp-unlit"></div>
 
-</div>    
-    
+<button id="light" class="btn hover-elements">Light On/Off</button>    
 
+<script>
+$(document).ready(function(){
+    $(".lamp-lit").fadeOut();
+    var $islit=0;
     
+    $("#light").click(function(){
+        if($islit==0){
+            $islit=1;
+            $(".lamp-lit").fadeIn();
+        }else{
+            $islit=0;
+            $(".lamp-lit").fadeOut()
+        }
+        
+    });
+});
+</script>    
 </BODY>
 
 </HTML>
