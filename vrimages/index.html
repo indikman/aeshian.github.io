@@ -15,16 +15,16 @@
       </a-entity>
 		
 <!--	Initial Image of the Tour-->
-      <a-sky id="pano" src="/images/jetha.jpg" rotation="0 -60 0" radius="5000" color="#fff"></a-sky>
+      <a-sky id="pano" src="images/jetha.jpg" rotation="0 -60 0" radius="5000" color="#fff"></a-sky>
         
 <!--	Buttons on the Initial image-->
-      <a-image id="ruwanweliseya" height="12" width="56" src="/hotspots/btn_ruwan.png" position="120 -20 -200" rotation="0 -30 0" visible="true">
+      <a-image id="ruwanweliseya" height="12" width="56" src="hotspots/btn_ruwan.png" position="120 -20 -200" rotation="0 -30 0" visible="true">
       </a-image>
       
-      <a-image id="mihinthalaya" height="12" width="56" src="/hotspots/btn_mihin.png" position="250 100 0" rotation="0 -80 0"  visible="true">
+      <a-image id="mihinthalaya" height="12" width="56" src="hotspots/btn_mihin.png" position="250 100 0" rotation="0 -80 0"  visible="true">
       </a-image>
 		
-		<a-image id="jethawanaramaya" height="12" width="56" src="/hotspots/btn_jetha.png" position="60 -20 200" rotation="0 200 0"  visible="hidden">
+		<a-image id="jethawanaramaya" height="12" width="56" src="hotspots/btn_jetha.png" position="60 -20 200" rotation="0 200 0"  visible="hidden">
       </a-image>
         
     </a-scene>
@@ -41,7 +41,7 @@
 
 		document.querySelector('#jethawanaramaya').addEventListener('click', function() {
 
-		  sky.setAttribute('src', '/images/jetha.jpg');
+		  sky.setAttribute('src', 'images/jetha.jpg');
 		  this.setAttribute('visible', 'false');
 
 		  mihinthalaya.setAttribute('visible', 'true');
@@ -55,7 +55,7 @@
 
 		document.querySelector('#ruwanweliseya').addEventListener('click', function() {
 
-		  sky.setAttribute('src', '/images/ruwanweli.jpg');
+		  sky.setAttribute('src', 'images/ruwanweli.jpg');
 		  this.setAttribute('visible', 'false');
 
 		  jethawanaramaya.setAttribute('visible', 'true');
@@ -69,7 +69,7 @@
 
 		document.querySelector('#mihinthalaya').addEventListener('click', function() {
 
-		  sky.setAttribute('src', '/images/mihinthale.jpg');
+		  sky.setAttribute('src', 'images/mihinthale.jpg');
 		  this.setAttribute('visible', 'false');
 
 		  ruwanweliseya.setAttribute('visible', 'true');
