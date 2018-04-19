@@ -435,7 +435,7 @@
                     "customId": "item_Bath _1524047205384",
                     "price": 2000,
                     "image": "http://indikman.github.io/house/floor/option1/img.png",
-                    "thumbnail": "http://indikman.github.io/house/floor/option1/img.png",
+                    "thumbnail": "http://indikman.github.io/house/floor/option1/thumb.png",
                     "nanocategory": "5ad71cc412c3365e6273ae5e"
                 },
                 {
@@ -444,7 +444,7 @@
                     "customId": "item_Bath _1524047205384",
                     "price": 2000,
                     "image": "http://indikman.github.io/house/floor/option2/img.png",
-                    "thumbnail": "http://indikman.github.io/house/floor/option2/img.png",
+                    "thumbnail": "http://indikman.github.io/house/floor/option2/thumb.png",
                     "nanocategory": "5ad71cc412c3365e6273ae5e"
                 }
             ],
@@ -455,7 +455,7 @@
                     "customId": "item_Damro_1524047257216",
                     "price": 2000,
                     "image": "http://indikman.github.io/house/fitting/option1/img.png",
-                    "thumbnail": "http://indikman.github.io/house/fitting/option1/img.png",
+                    "thumbnail": "http://indikman.github.io/house/fitting/option1/thumb.png",
                     "nanocategory": "5ad71c5a12c3365e6273ae5c"
                 },
                 {
@@ -464,7 +464,7 @@
                     "customId": "item_Damro_1524047257216",
                     "price": 2000,
                     "image": "http://indikman.github.io/house/fitting/option2/img.png",
-                    "thumbnail": "http://indikman.github.io/house/fitting/option2/img.png",
+                    "thumbnail": "http://indikman.github.io/house/fitting/option2/thumb.png",
                     "nanocategory": "5ad71c5a12c3365e6273ae5c"
                 }
             ],
