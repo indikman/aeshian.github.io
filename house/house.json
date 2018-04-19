@@ -61,20 +61,44 @@
     ],
     "appliances": [
         {
-            "_id": "5ad6fd1c7533495887345703",
-            "name": "Car Plug",
-            "customId": "item_Car P_1524038940745",
-            "price": 2000,
-            "image": "http://localhost:9000/api/v1/public/profile/images/appliances/7626041d_5eec_4bfb_b17d_b009f42567c7_1524038940742_.png",
-            "thumbnail": "http://localhost:9000/api/v1/public/profile/images/appliances/7bde5ed4_f537_41fe_9725_a70069546190_1524038940742_.jpg"
+            "_id": "5ad8ca9ea8c0d904abba6c15",
+            "name": "LG A4000 Fridge",
+            "customId": "item_LG A4_1524157086161",
+            "price": 3400,
+            "image": "http://localhost:9000/api/v1/public/profile/images/internalappliances/444adda5_f71a_49c2_bfc4_5a1309e8116d_1524157086154_.png",
+            "thumbnail": "http://localhost:9000/api/v1/public/profile/images/internalappliances/e11ae399_a101_498d_92be_b1c562f37a36_1524157086155_.jpg",
+            "type": {
+                "_id": "5ad8ca1da8c0d904abba6c14",
+                "name": "Fridge",
+                "subcategory": {
+                    "_id": "5ad8c9cca8c0d904abba6c12",
+                    "name": "Kitchen Appliances",
+                    "category": {
+                        "_id": "5ad6fd587533495887345705",
+                        "name": "Kitchen"
+                    }
+                }
+            }
         },
         {
-            "_id": "5ad6fd1c7533495887345703",
-            "name": "Car Plug",
-            "customId": "item_Car P_1524038940745",
-            "price": 2000,
-            "image": "http://localhost:9000/api/v1/public/profile/images/appliances/7626041d_5eec_4bfb_b17d_b009f42567c7_1524038940742_.png",
-            "thumbnail": "http://localhost:9000/api/v1/public/profile/images/appliances/7bde5ed4_f537_41fe_9725_a70069546190_1524038940742_.jpg"
+            "_id": "5ad8ca9ea8c0d904abba6c15",
+            "name": "LG A4000 Fridge",
+            "customId": "item_LG A4_1524157086161",
+            "price": 3400,
+            "image": "http://localhost:9000/api/v1/public/profile/images/internalappliances/444adda5_f71a_49c2_bfc4_5a1309e8116d_1524157086154_.png",
+            "thumbnail": "http://localhost:9000/api/v1/public/profile/images/internalappliances/e11ae399_a101_498d_92be_b1c562f37a36_1524157086155_.jpg",
+            "type": {
+                "_id": "5ad8ca1da8c0d904abba6c14",
+                "name": "Fridge",
+                "subcategory": {
+                    "_id": "5ad8c9cca8c0d904abba6c12",
+                    "name": "Kitchen Appliances",
+                    "category": {
+                        "_id": "5ad6fd587533495887345705",
+                        "name": "Kitchen"
+                    }
+                }
+            }
         }
     ],
     "toilet": [
@@ -390,8 +414,8 @@
                     "name": "Arpi Wall Plus",
                     "customId": "item_Arpi _1524047222973",
                     "price": 2000,
-                    "image": "http://localhost:9000/api/v1/public/profile/images/nanoitems/b41c4b63_26e3_48b5_a44e_bb923047ac76_1524047222965_.jpg",
-                    "thumbnail": "http://localhost:9000/api/v1/public/profile/images/nanoitems/b4c72c56_da6b_462f_b3d2_112d3fe5f5df_1524047222972_.png",
+                    "image": "http://indikman.github.io/house/wall/option1/img.png",
+                    "thumbnail": "http://indikman.github.io/house/wall/option1/thumb.png",
                     "nanocategory": "5ad71c6e12c3365e6273ae5d"
                 },
                 {
@@ -399,8 +423,8 @@
                     "name": "Arpi Wall Plus",
                     "customId": "item_Arpi _1524047222973",
                     "price": 2000,
-                    "image": "http://localhost:9000/api/v1/public/profile/images/nanoitems/b41c4b63_26e3_48b5_a44e_bb923047ac76_1524047222965_.jpg",
-                    "thumbnail": "http://localhost:9000/api/v1/public/profile/images/nanoitems/b4c72c56_da6b_462f_b3d2_112d3fe5f5df_1524047222972_.png",
+                    "image": "http://indikman.github.io/house/wall/option2/img.png",
+                    "thumbnail": "http://indikman.github.io/house/wall/option2/thumb.png",
                     "nanocategory": "5ad71c6e12c3365e6273ae5d"
                 }
             ],
@@ -410,8 +434,8 @@
                     "name": "Bath Floor B",
                     "customId": "item_Bath _1524047205384",
                     "price": 2000,
-                    "image": "http://localhost:9000/api/v1/public/profile/images/nanoitems/90fb00d3_3e76_47b4_87cb_bbc6d14cd607_1524047205378_.jpg",
-                    "thumbnail": "http://localhost:9000/api/v1/public/profile/images/nanoitems/3dbf5b1d_a140_486b_b6b2_eb6d97e4a2b8_1524047205373_.png",
+                    "image": "http://indikman.github.io/house/floor/option1/img.png",
+                    "thumbnail": "http://indikman.github.io/house/floor/option1/img.png",
                     "nanocategory": "5ad71cc412c3365e6273ae5e"
                 },
                 {
@@ -419,8 +443,8 @@
                     "name": "Bath Floor B",
                     "customId": "item_Bath _1524047205384",
                     "price": 2000,
-                    "image": "http://localhost:9000/api/v1/public/profile/images/nanoitems/90fb00d3_3e76_47b4_87cb_bbc6d14cd607_1524047205378_.jpg",
-                    "thumbnail": "http://localhost:9000/api/v1/public/profile/images/nanoitems/3dbf5b1d_a140_486b_b6b2_eb6d97e4a2b8_1524047205373_.png",
+                    "image": "http://indikman.github.io/house/floor/option2/img.png",
+                    "thumbnail": "http://indikman.github.io/house/floor/option2/img.png",
                     "nanocategory": "5ad71cc412c3365e6273ae5e"
                 }
             ],
@@ -430,8 +454,8 @@
                     "name": "Damro premium u4000 gloss fit",
                     "customId": "item_Damro_1524047257216",
                     "price": 2000,
-                    "image": "http://localhost:9000/api/v1/public/profile/images/nanoitems/d67661cd_3959_410d_825c_f88d01b3be26_1524047257215_.jpg",
-                    "thumbnail": "http://localhost:9000/api/v1/public/profile/images/nanoitems/3dfe3219_5f23_4994_b183_b33e239d1f52_1524047257214_.png",
+                    "image": "http://indikman.github.io/house/fitting/option1/img.png",
+                    "thumbnail": "http://indikman.github.io/house/fitting/option1/img.png",
                     "nanocategory": "5ad71c5a12c3365e6273ae5c"
                 },
                 {
@@ -439,76 +463,8 @@
                     "name": "Damro premium u4000 gloss fit",
                     "customId": "item_Damro_1524047257216",
                     "price": 2000,
-                    "image": "http://localhost:9000/api/v1/public/profile/images/nanoitems/d67661cd_3959_410d_825c_f88d01b3be26_1524047257215_.jpg",
-                    "thumbnail": "http://localhost:9000/api/v1/public/profile/images/nanoitems/3dfe3219_5f23_4994_b183_b33e239d1f52_1524047257214_.png",
-                    "nanocategory": "5ad71c5a12c3365e6273ae5c"
-                }
-            ],
-            "_id": "5ad8958d69c945805467af0c",
-            "name": "Summer Bath",
-            "customId": "item_Summe_1524143501720",
-            "price": 2000,
-            "image": "http://localhost:9000/api/v1/public/profile/images/extendedbathrooms/c4cd1fd2_9ef2_46da_bbaa_2170d4359f9b_1524143501717_.jpg",
-            "thumbnail": "http://localhost:9000/api/v1/public/profile/images/extendedbathrooms/7113a10b_5782_46dc_9b7f_2cac2c923e62_1524143501717_.png"
-        },
-        {
-            "wall_finishes": [
-                {
-                    "_id": "5ad71d7612c3365e6273ae60",
-                    "name": "Arpi Wall Plus",
-                    "customId": "item_Arpi _1524047222973",
-                    "price": 2000,
-                    "image": "http://localhost:9000/api/v1/public/profile/images/nanoitems/b41c4b63_26e3_48b5_a44e_bb923047ac76_1524047222965_.jpg",
-                    "thumbnail": "http://localhost:9000/api/v1/public/profile/images/nanoitems/b4c72c56_da6b_462f_b3d2_112d3fe5f5df_1524047222972_.png",
-                    "nanocategory": "5ad71c6e12c3365e6273ae5d"
-                },
-                {
-                    "_id": "5ad71d7612c3365e6273ae60",
-                    "name": "Arpi Wall Plus",
-                    "customId": "item_Arpi _1524047222973",
-                    "price": 2000,
-                    "image": "http://localhost:9000/api/v1/public/profile/images/nanoitems/b41c4b63_26e3_48b5_a44e_bb923047ac76_1524047222965_.jpg",
-                    "thumbnail": "http://localhost:9000/api/v1/public/profile/images/nanoitems/b4c72c56_da6b_462f_b3d2_112d3fe5f5df_1524047222972_.png",
-                    "nanocategory": "5ad71c6e12c3365e6273ae5d"
-                }
-            ],
-            "floor_tiles": [
-                {
-                    "_id": "5ad71d6512c3365e6273ae5f",
-                    "name": "Bath Floor B",
-                    "customId": "item_Bath _1524047205384",
-                    "price": 2000,
-                    "image": "http://localhost:9000/api/v1/public/profile/images/nanoitems/90fb00d3_3e76_47b4_87cb_bbc6d14cd607_1524047205378_.jpg",
-                    "thumbnail": "http://localhost:9000/api/v1/public/profile/images/nanoitems/3dbf5b1d_a140_486b_b6b2_eb6d97e4a2b8_1524047205373_.png",
-                    "nanocategory": "5ad71cc412c3365e6273ae5e"
-                },
-                {
-                    "_id": "5ad71d6512c3365e6273ae5f",
-                    "name": "Bath Floor B",
-                    "customId": "item_Bath _1524047205384",
-                    "price": 2000,
-                    "image": "http://localhost:9000/api/v1/public/profile/images/nanoitems/90fb00d3_3e76_47b4_87cb_bbc6d14cd607_1524047205378_.jpg",
-                    "thumbnail": "http://localhost:9000/api/v1/public/profile/images/nanoitems/3dbf5b1d_a140_486b_b6b2_eb6d97e4a2b8_1524047205373_.png",
-                    "nanocategory": "5ad71cc412c3365e6273ae5e"
-                }
-            ],
-            "fittings": [
-                {
-                    "_id": "5ad71d9912c3365e6273ae61",
-                    "name": "Damro premium u4000 gloss fit",
-                    "customId": "item_Damro_1524047257216",
-                    "price": 2000,
-                    "image": "http://localhost:9000/api/v1/public/profile/images/nanoitems/d67661cd_3959_410d_825c_f88d01b3be26_1524047257215_.jpg",
-                    "thumbnail": "http://localhost:9000/api/v1/public/profile/images/nanoitems/3dfe3219_5f23_4994_b183_b33e239d1f52_1524047257214_.png",
-                    "nanocategory": "5ad71c5a12c3365e6273ae5c"
-                },
-                {
-                    "_id": "5ad71d9912c3365e6273ae61",
-                    "name": "Damro premium u4000 gloss fit",
-                    "customId": "item_Damro_1524047257216",
-                    "price": 2000,
-                    "image": "http://localhost:9000/api/v1/public/profile/images/nanoitems/d67661cd_3959_410d_825c_f88d01b3be26_1524047257215_.jpg",
-                    "thumbnail": "http://localhost:9000/api/v1/public/profile/images/nanoitems/3dfe3219_5f23_4994_b183_b33e239d1f52_1524047257214_.png",
+                    "image": "http://indikman.github.io/house/fitting/option2/img.png",
+                    "thumbnail": "http://indikman.github.io/house/fitting/option2/img.png",
                     "nanocategory": "5ad71c5a12c3365e6273ae5c"
                 }
             ],
