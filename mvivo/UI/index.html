@@ -3,10 +3,10 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>MVIVO UI</title>
+	<title>MvivoNew</title>
 	<script src="Build/UnityLoader.js"></script>
 	<script>
-		var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Build.json");
+		var gameInstance = UnityLoader.instantiate("gameContainer", "Build/FInal Build.json");
 		var scaleToFit;
 		try{
 			scaleToFit = !!JSON.parse("");
@@ -23,15 +23,15 @@
 				w = window.innerWidth;
 				h = window.innerHeight;
 
-				var r = 720/1276;
+				var r = 1080/1920;
 
 				if(w * r > window.innerHeight){
 					w = Math.min(w, Math.ceil(h / r));
 				}
 				h = Math.floor(w * r);
 			}else{
-				w=1276;
-				h=720;
+				w=1920;
+				h=1080;
 			}
 
 			container.style.width = canvas.style.width = w + "px";
